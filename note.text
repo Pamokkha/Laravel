@@ -6,3 +6,20 @@ routes
 Resource
     -views
     -hello.blade.php(UI)
+
+    CRUD// resouce->migration -> model
+
+    categories
+    (id, name, created_at update_at)
+    -ဘာသာရေး
+    -စီးပွားရေး
+    -နိုင်ငံရေး
+    -သုတ
+    -ရသ
+
+    books
+    (id, title, category_id, cover, content, created_at, updated_at)
+    -သူငယ်ချင်းလို့ဆက်၍ခေါ်မယ်ခိုင်, ရသ, ပုံ, စာသား,အနည်းအငယ်
+
+    categories(1)----->(1..*) books
+    categories(1)<------(1) books
